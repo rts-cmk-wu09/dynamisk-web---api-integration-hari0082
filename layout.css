@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background-color: yellowgreen;
+    text-transform: capitalize;
+    font-family: 'Francois One', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid white;
+}
+
+h1::first-letter :hover {
+    color: #FFCC00;
+}
+
+#list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 250px;
+}
+
+.list-item {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+
+}
+  
+.list-item:hover {
+    border: 1px solid darkred;
+}
+  
+.list-item img {
+    width: 200px;
+    height: 200px;
+}
+  
+  #pokemon-image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
