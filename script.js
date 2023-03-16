@@ -1,7 +1,7 @@
 // lav globale variabler her som du kan genbruge.
 
 const listContainer = document.getElementById("list-container");
-fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
+fetch("https://pokeapi.co/api/v2/pokemon?limit=9")
   .then((response) => response.json())
   .then((data) => {
     data.results.forEach((pokemon) => {

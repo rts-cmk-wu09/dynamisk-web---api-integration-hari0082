@@ -7,18 +7,17 @@
     list-style: none;
     text-decoration: none;
     color: white;
-    background-color: navy;
     text-transform: capitalize;
     font-family: 'Francois One', sans-serif;
 }
 
 h1 {
-    color: #FFCC00;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    border-bottom: 5px dotted #FFCC00;
+    border-bottom: 5px solid black;
+    background-color: #E54222;
 }
 
 
@@ -34,19 +33,23 @@ h1 {
     height: 350px;
     margin: 20px;
     padding-top: 50px;
-    border: solid 1px;
     text-align: center;
     text-decoration: none;
+    background-image: url(/img/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-fullview.png);
+    background-size: contain;
+
 
 }
   
 .list-item:hover {
-    border: 1px solid #FFCC00;
+    border: solid #E54222;
+    border-radius: 15px;
 }
   
 .list-item img {
     width: 200px;
     height: 200px;
+    background: none;
 }
   
 #pokemon-image {
