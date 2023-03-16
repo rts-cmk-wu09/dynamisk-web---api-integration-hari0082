@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #FFCC00;
+    text-transform: capitalize;
+    font-family: 'Francois One', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+button, a{
+    background-color: white;
+    color: #FFCC00;
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    width: 10%;
+}
