@@ -104,24 +104,22 @@ const pokemonArray = [
 
 // Gør dynamisk herunder:
 
+const params = new URLSearchParams(window.location.search);
+const pokemon = params.get("name");
+
 const pokemonContainer = document.getElementById("pokemon-container");
 
 pokemonArray.forEach((pokemon) => {
-    const pokemonTemplate = `
+  pokemonContainer.innerHTML += `
     <div class="pokemon-card">
       <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
       <h2>${pokemon.name}</h2>
       <ul>
         <li>ID: ${pokemon.id}</li>
-        <li>Types: ${pokemon.types
-          .map((type) => type.type.name)
-          .join(", ")}</li>
+        <li>Types: ${pokemon.types.map((type) => type.type.name)}</li>
         <li>Height: ${pokemon.height}</li>
         <li>Weight: ${pokemon.weight}</li>
       </ul>
     </div>
   `;
-
-  console.log(pokemonTemplate); //virker ikke ...
-
 });
